@@ -4,6 +4,9 @@
 Node* createNode ( int data ); 
 Node* insert(Node* root, int  data); 
 void deleteNode (Node* root, int data); 
+
+
+// preorder , postorder, level order, in order traversal (11/27 lec)
 void printBFS(Node* root); // level traversal 
 void printDFS(Node* root); // depth traversal 
 
@@ -34,4 +37,9 @@ Node* insert(Node* root, int  data)
         root->left = insert(root->left, data ) ; 
     }
     return root; 
+}
+
+void deleteNode (Node* root, int data)
+{
+
 }
